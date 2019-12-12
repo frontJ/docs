@@ -1,0 +1,37 @@
+{
+  "name": "@frontj/docs",
+  "private": true,
+  "scripts": {
+    "lint:html": "gulp lintHtml --silent",
+    "_build:html": "ts-node src/build.ts",
+    "build:html": "gulp html --silent",
+    "lint:css": "gulp lintCss --silent",
+    "build:css": "gulp css --silent",
+    "lint": "gulp lint --silent",
+    "build": "gulp build --silent",
+    "dev": "gulp --silent"
+  },
+  "devDependencies": {
+    "@frontj/builder": "^0.1.1",
+    "@frontj/elements": "^0.1.2",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "browser-sync": "^2.26.7",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "frontj": "^0.1.6",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "reset-css": "^5.0.1",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  }
+}

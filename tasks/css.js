@@ -1,0 +1,16 @@
+const { src, dest } = require('gulp')
+const sass = require('gulp-sass')
+const sassLint = require('gulp-sass-lint')
+const autoprefixer = require('gulp-autoprefixer')
+const cleanCss = require('gulp-clean-css')
+
+exports.lint = () => src('src/assets/css/**/*.scss')
+  .pipe(sassLint())
+  .pipe(sassLint.format())
+  .pipe(sassLint.failOnError())
+
+exports.build = () => src('src/assets/css/style.scss')
+  .pipe(sass())
+  .pipe(autoprefixer())
+  .pipe(cleanCss())
+  .pipe(dest('dist/assets/css'))
