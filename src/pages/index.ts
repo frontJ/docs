@@ -5,7 +5,7 @@ import {
 import {
   Head,
   Html
-} from './components'
+} from '../components'
 
 export const Top = () => Html(
   Head(),

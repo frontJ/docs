@@ -5,7 +5,7 @@ import {
   title,
   LoadCss
 } from '@frontj/elements'
-import * as site from '../../data/site'
+import * as site from '../data/site'
 
 interface Options {
   title?: string;
