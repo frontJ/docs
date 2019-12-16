@@ -7,6 +7,8 @@
     "build:html": "gulp html --silent",
     "lint:css": "gulp lintCss --silent",
     "build:css": "gulp css --silent",
+    "clean:img": "gulp cleanImg --silent",
+    "build:img": "gulp img --silent",
     "lint": "gulp lint --silent",
     "build": "gulp build --silent",
     "dev": "gulp --silent"
@@ -17,6 +19,7 @@
     "@typescript-eslint/eslint-plugin": "^2.7.0",
     "@typescript-eslint/parser": "^2.7.0",
     "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
     "eslint": "^6.6.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
